@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d2P-Zr-nRD">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="jZJ-EX-HpB">
+            <objects>
+                <viewController id="d2P-Zr-nRD" customClass="HomeVC" customModule="BNK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bx3-Rp-C6J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gp8-Fi-von">
+                                <rect key="frame" x="25" y="94" width="364" height="718"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="index" rowHeight="103" id="BtT-Yw-42h" customClass="ScheduleViewCell" customModule="BNK_APP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="364" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BtT-Yw-42h" id="ajp-A4-7SN">
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="102.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vll-Lo-buc">
+                                                    <rect key="frame" x="161" y="41" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vll-Lo-buc" firstAttribute="centerX" secondItem="ajp-A4-7SN" secondAttribute="centerX" id="GdA-ev-4We"/>
+                                                <constraint firstItem="vll-Lo-buc" firstAttribute="centerY" secondItem="ajp-A4-7SN" secondAttribute="centerY" id="SuU-OH-LQ3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="vll-Lo-buc" id="ZSb-Y2-7Th"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hRH-aT-R5Z" firstAttribute="trailing" secondItem="gp8-Fi-von" secondAttribute="trailing" constant="25" id="7gI-Jt-Gpk"/>
+                            <constraint firstItem="hRH-aT-R5Z" firstAttribute="bottom" secondItem="gp8-Fi-von" secondAttribute="bottom" constant="50" id="PmV-eC-6s1"/>
+                            <constraint firstItem="gp8-Fi-von" firstAttribute="leading" secondItem="hRH-aT-R5Z" secondAttribute="leading" constant="25" id="fmM-mB-j0m"/>
+                            <constraint firstItem="gp8-Fi-von" firstAttribute="top" secondItem="hRH-aT-R5Z" secondAttribute="top" constant="50" id="xJ3-lD-ypO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hRH-aT-R5Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="scheduleTableView" destination="gp8-Fi-von" id="2qp-7e-VXm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POX-F9-Yzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.130434782608695" y="162.72321428571428"/>
+        </scene>
+    </scenes>
+</document>
