@@ -9,10 +9,10 @@
 import Foundation
 import ObjectMapper
 
-class GetScheduleService<Response: BaseMappable> {
+class GetScheduleService {
     
-    func call(completion: @escaping([Response]) -> ()) {
-        let api = BaseApi<Response>()
+    func call(completion: @escaping([ScheduleModel]) -> ()) {
+        let api = BaseApi<ScheduleModel>()
         let data = GetScheduleConfig()
         api.postApiArray(
             data.url,

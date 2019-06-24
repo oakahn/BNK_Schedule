@@ -11,6 +11,7 @@ import UIKit
 class ScheduleViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var dataLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

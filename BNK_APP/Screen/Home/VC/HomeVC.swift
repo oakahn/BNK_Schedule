@@ -1,14 +1,14 @@
 import UIKit
 
 protocol HomeVCProtocol {
-    func getDataForTableViewCell(data: [BNKLiveModel])
+    func getDataForTableViewCell(data: [ScheduleModel])
 }
 
 class HomeVC: BaseVC {
     
     @IBOutlet weak var scheduleTableView: UITableView!
     lazy var presenter = HomePresenter(self)
-    var scheduleModel: [BNKLiveModel]?
+    var scheduleModel: [ScheduleModel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class HomeVC: BaseVC {
 }
 
 extension HomeVC: HomeVCProtocol {
-    func getDataForTableViewCell(data: [BNKLiveModel]) {
+    func getDataForTableViewCell(data: [ScheduleModel]) {
         scheduleModel = data
         scheduleTableView.reloadData()
     }
@@ -42,7 +42,8 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         guard let table = tableView.dequeueReusableCell(withIdentifier: "index", for: indexPath) as? ScheduleViewCell else {
             return UITableViewCell()
         }
-        table.nameLabel.text = scheduleModel?[indexPath.row].schedule_name
+        table.nameLabel.text = scheduleModel?[indexPath.row].schedule_oshimem?[0].mem_nickname
+        table.dataLabel.text = scheduleModel?[indexPath.row].schedule_date
         return table
     }
 }

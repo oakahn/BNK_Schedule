@@ -19,7 +19,7 @@ protocol HomePresenterProtocol {
 
 class HomePresenter {
     var view: HomeVCProtocol?
-    private let getScheduleservice = GetScheduleService<BNKLiveModel>()
+    private let getScheduleservice = GetScheduleService()
     var testModel: [TestModel] = []
     
     init(_ view: HomeVCProtocol) {
@@ -39,16 +39,16 @@ class HomePresenter {
 extension HomePresenter: HomePresenterProtocol {
     
     func callScheduleService() {
-        //        getScheduleservice.call { (resp) in
-        //            print(resp[0].schedule_name)
-        //        }
+//                getScheduleservice.call { (resp) in
+//                    print(resp[0].schedule_name)
+//                }
         let jsonEncoder = JSONEncoder()
         
         guard let jsonData = try? jsonEncoder.encode(testModel) else { return }
         
         guard let json = String(data: jsonData, encoding: String.Encoding.utf8) else { return }
         
-        guard let detail = Mapper<BNKLiveModel>().mapArray(JSONString: json) else { return }
+        guard let detail = Mapper<ScheduleModel>().mapArray(JSONString: json) else { return }
         
         view?.getDataForTableViewCell(data: detail)
     }

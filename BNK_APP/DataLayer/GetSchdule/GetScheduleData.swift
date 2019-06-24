@@ -1,7 +1,7 @@
 import Foundation
 import ObjectMapper
 
-class BNKLiveModel: Mappable {
+class ScheduleModel: Mappable {
     
     var schedule_id: String?
     var schedule_name: String?
