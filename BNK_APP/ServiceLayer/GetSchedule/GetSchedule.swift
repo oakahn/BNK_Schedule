@@ -14,8 +14,9 @@ class GetScheduleService {
     func call(completion: @escaping([ScheduleModel]) -> ()) {
         let api = BaseApi<ScheduleModel>()
         let data = GetScheduleConfig()
-        api.postApiArray(
+        api.apiArray(
             data.url,
+            method: data.method,
             parameters: data.parameter,
             headers: data.headers
         ) { (response) in

@@ -1,7 +1,9 @@
 import Foundation
-
+import Alamofire
 
 class GetScheduleConfig {
+    
+    var method: HTTPMethod = .post
     
     let url = "https://www.bnk48.com/model/scheduleClassdb/scheduleAjax.php"
     

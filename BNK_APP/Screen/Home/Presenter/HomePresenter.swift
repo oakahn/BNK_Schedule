@@ -24,7 +24,7 @@ class HomePresenter {
     
     init(_ view: HomeVCProtocol) {
         self.view = view
-        mockData()
+        //        mockData()
     }
     
     private func mockData() {
@@ -39,17 +39,17 @@ class HomePresenter {
 extension HomePresenter: HomePresenterProtocol {
     
     func callScheduleService() {
-//                getScheduleservice.call { (resp) in
-//                    print(resp[0].schedule_name)
-//                }
-        let jsonEncoder = JSONEncoder()
+        getScheduleservice.call { (resp) in
+            self.view?.getDataForTableViewCell(data: resp)
+        }
+        //        let jsonEncoder = JSONEncoder()
+        //
+        //        guard let jsonData = try? jsonEncoder.encode(testModel) else { return }
+        //
+        //        guard let json = String(data: jsonData, encoding: String.Encoding.utf8) else { return }
+        //
+        //        guard let detail = Mapper<ScheduleModel>().mapArray(JSONString: json) else { return }
         
-        guard let jsonData = try? jsonEncoder.encode(testModel) else { return }
-        
-        guard let json = String(data: jsonData, encoding: String.Encoding.utf8) else { return }
-        
-        guard let detail = Mapper<ScheduleModel>().mapArray(JSONString: json) else { return }
-        
-        view?.getDataForTableViewCell(data: detail)
+        //        view?.getDataForTableViewCell(data: detail)
     }
 }

@@ -32,6 +32,11 @@
 		9CBE660F22C08A7800F7FA5B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE660E22C08A7800F7FA5B /* Config.swift */; };
 		9CBE661322C0912C00F7FA5B /* GetScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE661222C0912C00F7FA5B /* GetScheduleData.swift */; };
 		9CBE661522C0970300F7FA5B /* ScheduleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE661422C0970300F7FA5B /* ScheduleViewCell.swift */; };
+		9CBE661A22C0CF0B00F7FA5B /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE661922C0CF0B00F7FA5B /* SplashScreen.storyboard */; };
+		9CBE661D22C0CF1F00F7FA5B /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE661C22C0CF1F00F7FA5B /* SplashScreenVC.swift */; };
+		9CBE662022C0CF8000F7FA5B /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE661F22C0CF8000F7FA5B /* SplashScreenRouter.swift */; };
+		9CBE662222C0CFC500F7FA5B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE662122C0CFC500F7FA5B /* BaseRouter.swift */; };
+		9CBE662522C1D2DE00F7FA5B /* DateFormatComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE662422C1D2DE00F7FA5B /* DateFormatComponent.swift */; };
 		ED5EA5ED3D9B89CACBCEB29A /* Pods_BNK_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40A3C2EEA08A4A52D4E2CC /* Pods_BNK_APP.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +89,11 @@
 		9CBE660E22C08A7800F7FA5B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		9CBE661222C0912C00F7FA5B /* GetScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetScheduleData.swift; sourceTree = "<group>"; };
 		9CBE661422C0970300F7FA5B /* ScheduleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewCell.swift; sourceTree = "<group>"; };
+		9CBE661922C0CF0B00F7FA5B /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		9CBE661C22C0CF1F00F7FA5B /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		9CBE661F22C0CF8000F7FA5B /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
+		9CBE662122C0CFC500F7FA5B /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		9CBE662422C1D2DE00F7FA5B /* DateFormatComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatComponent.swift; sourceTree = "<group>"; };
 		9F40A3C2EEA08A4A52D4E2CC /* Pods_BNK_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNK_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69FA7589969482ADA2A7EBA /* Pods-BNK_APPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNK_APPTests.debug.xcconfig"; path = "Target Support Files/Pods-BNK_APPTests/Pods-BNK_APPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3FF3F19F9498D974F66DF2E /* Pods_BNK_APPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNK_APPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +206,7 @@
 		9CBE65E622BCC9CD00F7FA5B /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9CBE661822C0CEF900F7FA5B /* SplashScreen */,
 				9CBE65E922BCCAB000F7FA5B /* Home */,
 			);
 			path = Screen;
@@ -204,6 +215,8 @@
 		9CBE65E722BCC9D500F7FA5B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9CBE662422C1D2DE00F7FA5B /* DateFormatComponent.swift */,
+				9CBE662122C0CFC500F7FA5B /* BaseRouter.swift */,
 				9CBE65F722BCCB8500F7FA5B /* Alert.swift */,
 				9CBE65FA22BCCB8500F7FA5B /* BaseClass.swift */,
 				9CBE65F622BCCB8500F7FA5B /* BaseXibView.swift */,
@@ -305,6 +318,32 @@
 				9CBE661222C0912C00F7FA5B /* GetScheduleData.swift */,
 			);
 			path = GetSchdule;
+			sourceTree = "<group>";
+		};
+		9CBE661822C0CEF900F7FA5B /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE661E22C0CF6D00F7FA5B /* Router */,
+				9CBE661B22C0CF1100F7FA5B /* VC */,
+				9CBE661922C0CF0B00F7FA5B /* SplashScreen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		9CBE661B22C0CF1100F7FA5B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE661C22C0CF1F00F7FA5B /* SplashScreenVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9CBE661E22C0CF6D00F7FA5B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE661F22C0CF8000F7FA5B /* SplashScreenRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		CC17FE3D77F504DF0300474D /* Frameworks */ = {
@@ -426,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBE65C322BCC9BA00F7FA5B /* LaunchScreen.storyboard in Resources */,
+				9CBE661A22C0CF0B00F7FA5B /* SplashScreen.storyboard in Resources */,
 				9CBE660322BCCC5C00F7FA5B /* Home.storyboard in Resources */,
 				9CBE65C022BCC9BA00F7FA5B /* Assets.xcassets in Resources */,
 				9CBE65BE22BCC9B900F7FA5B /* Main.storyboard in Resources */,
@@ -562,10 +602,14 @@
 				9CBE661322C0912C00F7FA5B /* GetScheduleData.swift in Sources */,
 				9CBE661522C0970300F7FA5B /* ScheduleViewCell.swift in Sources */,
 				9CBE660C22BE7FDA00F7FA5B /* GetSchedule.swift in Sources */,
+				9CBE662022C0CF8000F7FA5B /* SplashScreenRouter.swift in Sources */,
 				9CBE65FB22BCCB8500F7FA5B /* BaseXibView.swift in Sources */,
+				9CBE662222C0CFC500F7FA5B /* BaseRouter.swift in Sources */,
 				9CBE65FC22BCCB8500F7FA5B /* Alert.swift in Sources */,
 				9CBE65FD22BCCB8500F7FA5B /* LoadingXibView.swift in Sources */,
 				9CBE65B922BCC9B900F7FA5B /* AppDelegate.swift in Sources */,
+				9CBE661D22C0CF1F00F7FA5B /* SplashScreenVC.swift in Sources */,
+				9CBE662522C1D2DE00F7FA5B /* DateFormatComponent.swift in Sources */,
 				9CBE660122BCCBF000F7FA5B /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
