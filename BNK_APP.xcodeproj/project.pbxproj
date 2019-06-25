@@ -16,7 +16,7 @@
 		9CBE65C322BCC9BA00F7FA5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE65C122BCC9BA00F7FA5B /* LaunchScreen.storyboard */; };
 		9CBE65CE22BCC9BA00F7FA5B /* BNK_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65CD22BCC9BA00F7FA5B /* BNK_APPTests.swift */; };
 		9CBE65D922BCC9BA00F7FA5B /* BNK_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65D822BCC9BA00F7FA5B /* BNK_APPUITests.swift */; };
-		9CBE65EF22BCCB3E00F7FA5B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65EE22BCCB3E00F7FA5B /* HomeVC.swift */; };
+		9CBE65EF22BCCB3E00F7FA5B /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65EE22BCCB3E00F7FA5B /* ScheduleVC.swift */; };
 		9CBE65F322BCCB7D00F7FA5B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65F022BCCB7D00F7FA5B /* Font.swift */; };
 		9CBE65F422BCCB7D00F7FA5B /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65F122BCCB7D00F7FA5B /* VC.swift */; };
 		9CBE65F522BCCB7D00F7FA5B /* UiApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65F222BCCB7D00F7FA5B /* UiApplication.swift */; };
@@ -25,8 +25,8 @@
 		9CBE65FD22BCCB8500F7FA5B /* LoadingXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65F822BCCB8500F7FA5B /* LoadingXibView.swift */; };
 		9CBE65FE22BCCB8500F7FA5B /* LoadingXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE65F922BCCB8500F7FA5B /* LoadingXibView.xib */; };
 		9CBE65FF22BCCB8500F7FA5B /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE65FA22BCCB8500F7FA5B /* BaseClass.swift */; };
-		9CBE660122BCCBF000F7FA5B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE660022BCCBF000F7FA5B /* HomePresenter.swift */; };
-		9CBE660322BCCC5C00F7FA5B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE660222BCCC5C00F7FA5B /* Home.storyboard */; };
+		9CBE660122BCCBF000F7FA5B /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE660022BCCBF000F7FA5B /* SchedulePresenter.swift */; };
+		9CBE660322BCCC5C00F7FA5B /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE660222BCCC5C00F7FA5B /* Schedule.storyboard */; };
 		9CBE660622BCCE6500F7FA5B /* BaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE660522BCCE6500F7FA5B /* BaseApi.swift */; };
 		9CBE660C22BE7FDA00F7FA5B /* GetSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE660B22BE7FDA00F7FA5B /* GetSchedule.swift */; };
 		9CBE660F22C08A7800F7FA5B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE660E22C08A7800F7FA5B /* Config.swift */; };
@@ -37,6 +37,11 @@
 		9CBE662022C0CF8000F7FA5B /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE661F22C0CF8000F7FA5B /* SplashScreenRouter.swift */; };
 		9CBE662222C0CFC500F7FA5B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE662122C0CFC500F7FA5B /* BaseRouter.swift */; };
 		9CBE662522C1D2DE00F7FA5B /* DateFormatComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE662422C1D2DE00F7FA5B /* DateFormatComponent.swift */; };
+		9CBE662B22C2252400F7FA5B /* InstagramVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE662A22C2252400F7FA5B /* InstagramVC.swift */; };
+		9CBE662D22C2259B00F7FA5B /* InstagramPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE662C22C2259B00F7FA5B /* InstagramPresenter.swift */; };
+		9CBE662F22C22AD100F7FA5B /* Instagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBE662E22C22AD100F7FA5B /* Instagram.storyboard */; };
+		9CBE663422C22C3D00F7FA5B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE663322C22C3D00F7FA5B /* HomeVC.swift */; };
+		9CBE663622C22C7600F7FA5B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBE663522C22C7600F7FA5B /* HomePresenter.swift */; };
 		ED5EA5ED3D9B89CACBCEB29A /* Pods_BNK_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40A3C2EEA08A4A52D4E2CC /* Pods_BNK_APP.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +78,7 @@
 		9CBE65D422BCC9BA00F7FA5B /* BNK_APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BNK_APPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBE65D822BCC9BA00F7FA5B /* BNK_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNK_APPUITests.swift; sourceTree = "<group>"; };
 		9CBE65DA22BCC9BA00F7FA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CBE65EE22BCCB3E00F7FA5B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9CBE65EE22BCCB3E00F7FA5B /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
 		9CBE65F022BCCB7D00F7FA5B /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		9CBE65F122BCCB7D00F7FA5B /* VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
 		9CBE65F222BCCB7D00F7FA5B /* UiApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiApplication.swift; sourceTree = "<group>"; };
@@ -82,8 +87,8 @@
 		9CBE65F822BCCB8500F7FA5B /* LoadingXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingXibView.swift; sourceTree = "<group>"; };
 		9CBE65F922BCCB8500F7FA5B /* LoadingXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingXibView.xib; sourceTree = "<group>"; };
 		9CBE65FA22BCCB8500F7FA5B /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
-		9CBE660022BCCBF000F7FA5B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		9CBE660222BCCC5C00F7FA5B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9CBE660022BCCBF000F7FA5B /* SchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
+		9CBE660222BCCC5C00F7FA5B /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		9CBE660522BCCE6500F7FA5B /* BaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApi.swift; sourceTree = "<group>"; };
 		9CBE660B22BE7FDA00F7FA5B /* GetSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSchedule.swift; sourceTree = "<group>"; };
 		9CBE660E22C08A7800F7FA5B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -94,6 +99,11 @@
 		9CBE661F22C0CF8000F7FA5B /* SplashScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
 		9CBE662122C0CFC500F7FA5B /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		9CBE662422C1D2DE00F7FA5B /* DateFormatComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatComponent.swift; sourceTree = "<group>"; };
+		9CBE662A22C2252400F7FA5B /* InstagramVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramVC.swift; sourceTree = "<group>"; };
+		9CBE662C22C2259B00F7FA5B /* InstagramPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramPresenter.swift; sourceTree = "<group>"; };
+		9CBE662E22C22AD100F7FA5B /* Instagram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instagram.storyboard; sourceTree = "<group>"; };
+		9CBE663322C22C3D00F7FA5B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9CBE663522C22C7600F7FA5B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		9F40A3C2EEA08A4A52D4E2CC /* Pods_BNK_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNK_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69FA7589969482ADA2A7EBA /* Pods-BNK_APPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNK_APPTests.debug.xcconfig"; path = "Target Support Files/Pods-BNK_APPTests/Pods-BNK_APPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3FF3F19F9498D974F66DF2E /* Pods_BNK_APPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNK_APPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,8 +216,10 @@
 		9CBE65E622BCC9CD00F7FA5B /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9CBE663022C22B4800F7FA5B /* Home */,
+				9CBE662622C2250200F7FA5B /* Instagram */,
 				9CBE661822C0CEF900F7FA5B /* SplashScreen */,
-				9CBE65E922BCCAB000F7FA5B /* Home */,
+				9CBE65E922BCCAB000F7FA5B /* Schedule */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -236,22 +248,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		9CBE65E922BCCAB000F7FA5B /* Home */ = {
+		9CBE65E922BCCAB000F7FA5B /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
 				9CBE65ED22BCCB2C00F7FA5B /* Router */,
 				9CBE65EC22BCCB2700F7FA5B /* Model */,
 				9CBE65EB22BCCB2000F7FA5B /* Presenter */,
 				9CBE65EA22BCCB1900F7FA5B /* VC */,
-				9CBE660222BCCC5C00F7FA5B /* Home.storyboard */,
+				9CBE660222BCCC5C00F7FA5B /* Schedule.storyboard */,
 			);
-			path = Home;
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		9CBE65EA22BCCB1900F7FA5B /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				9CBE65EE22BCCB3E00F7FA5B /* HomeVC.swift */,
+				9CBE65EE22BCCB3E00F7FA5B /* ScheduleVC.swift */,
 				9CBE661422C0970300F7FA5B /* ScheduleViewCell.swift */,
 			);
 			path = VC;
@@ -260,7 +272,7 @@
 		9CBE65EB22BCCB2000F7FA5B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				9CBE660022BCCBF000F7FA5B /* HomePresenter.swift */,
+				9CBE660022BCCBF000F7FA5B /* SchedulePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -344,6 +356,65 @@
 				9CBE661F22C0CF8000F7FA5B /* SplashScreenRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		9CBE662622C2250200F7FA5B /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE662922C2251400F7FA5B /* Model */,
+				9CBE662822C2250E00F7FA5B /* Presenter */,
+				9CBE662722C2250900F7FA5B /* VC */,
+				9CBE662E22C22AD100F7FA5B /* Instagram.storyboard */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		9CBE662722C2250900F7FA5B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE662A22C2252400F7FA5B /* InstagramVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9CBE662822C2250E00F7FA5B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE662C22C2259B00F7FA5B /* InstagramPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9CBE662922C2251400F7FA5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CBE663022C22B4800F7FA5B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE663222C22C2D00F7FA5B /* Presenter */,
+				9CBE663122C22C2800F7FA5B /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9CBE663122C22C2800F7FA5B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE663322C22C3D00F7FA5B /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9CBE663222C22C2D00F7FA5B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9CBE663522C22C7600F7FA5B /* HomePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		CC17FE3D77F504DF0300474D /* Frameworks */ = {
@@ -466,10 +537,11 @@
 			files = (
 				9CBE65C322BCC9BA00F7FA5B /* LaunchScreen.storyboard in Resources */,
 				9CBE661A22C0CF0B00F7FA5B /* SplashScreen.storyboard in Resources */,
-				9CBE660322BCCC5C00F7FA5B /* Home.storyboard in Resources */,
+				9CBE660322BCCC5C00F7FA5B /* Schedule.storyboard in Resources */,
 				9CBE65C022BCC9BA00F7FA5B /* Assets.xcassets in Resources */,
 				9CBE65BE22BCC9B900F7FA5B /* Main.storyboard in Resources */,
 				9CBE65FE22BCCB8500F7FA5B /* LoadingXibView.xib in Resources */,
+				9CBE662F22C22AD100F7FA5B /* Instagram.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,16 +665,20 @@
 			files = (
 				9CBE65F322BCCB7D00F7FA5B /* Font.swift in Sources */,
 				9CBE65FF22BCCB8500F7FA5B /* BaseClass.swift in Sources */,
-				9CBE65EF22BCCB3E00F7FA5B /* HomeVC.swift in Sources */,
+				9CBE65EF22BCCB3E00F7FA5B /* ScheduleVC.swift in Sources */,
 				9CBE660F22C08A7800F7FA5B /* Config.swift in Sources */,
 				9CBE65F522BCCB7D00F7FA5B /* UiApplication.swift in Sources */,
+				9CBE662D22C2259B00F7FA5B /* InstagramPresenter.swift in Sources */,
 				9CBE65BB22BCC9B900F7FA5B /* ViewController.swift in Sources */,
 				9CBE660622BCCE6500F7FA5B /* BaseApi.swift in Sources */,
 				9CBE65F422BCCB7D00F7FA5B /* VC.swift in Sources */,
 				9CBE661322C0912C00F7FA5B /* GetScheduleData.swift in Sources */,
 				9CBE661522C0970300F7FA5B /* ScheduleViewCell.swift in Sources */,
+				9CBE662B22C2252400F7FA5B /* InstagramVC.swift in Sources */,
 				9CBE660C22BE7FDA00F7FA5B /* GetSchedule.swift in Sources */,
+				9CBE663422C22C3D00F7FA5B /* HomeVC.swift in Sources */,
 				9CBE662022C0CF8000F7FA5B /* SplashScreenRouter.swift in Sources */,
+				9CBE663622C22C7600F7FA5B /* HomePresenter.swift in Sources */,
 				9CBE65FB22BCCB8500F7FA5B /* BaseXibView.swift in Sources */,
 				9CBE662222C0CFC500F7FA5B /* BaseRouter.swift in Sources */,
 				9CBE65FC22BCCB8500F7FA5B /* Alert.swift in Sources */,
@@ -610,7 +686,7 @@
 				9CBE65B922BCC9B900F7FA5B /* AppDelegate.swift in Sources */,
 				9CBE661D22C0CF1F00F7FA5B /* SplashScreenVC.swift in Sources */,
 				9CBE662522C1D2DE00F7FA5B /* DateFormatComponent.swift in Sources */,
-				9CBE660122BCCBF000F7FA5B /* HomePresenter.swift in Sources */,
+				9CBE660122BCCBF000F7FA5B /* SchedulePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

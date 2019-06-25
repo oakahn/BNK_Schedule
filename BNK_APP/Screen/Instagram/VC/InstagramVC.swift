@@ -1,5 +1,5 @@
 //
-//  HomeVC.swift
+//  InstagramVC.swift
 //  BNK_APP
 //
 //  Created by Chayawat Suntornrak on 25/6/2562 BE.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol HomeVCProtocol: BaseVCProtocol {
+protocol InstagramVCProtocol: BaseVCProtocol {
     
 }
 
-class HomeVC: BaseVC {
+class InstagramVC: BaseVC {
     
-    lazy var presenter = HomePresenter(self)
+    lazy var presenter = InstagramPresenter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,6 @@ class HomeVC: BaseVC {
     }
 }
 
-extension HomeVC: HomeVCProtocol {
+extension InstagramVC: InstagramVCProtocol {
     
 }

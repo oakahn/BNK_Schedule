@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeVC-->
+        <!--ScheduleVC-->
         <scene sceneID="jZJ-EX-HpB">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="d2P-Zr-nRD" customClass="HomeVC" customModule="BNK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScheduleVC" id="d2P-Zr-nRD" customClass="ScheduleVC" customModule="BNK_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bx3-Rp-C6J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
